@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: solid darkolivegreen 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+#women-bike{
+    animation: womenBike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#front-wheel{
+    animation: wheel 1.5s linear infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#rare-wheel{
+    animation: wheel 1.5s linear infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes womenBike {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(15deg);
+    }
+}
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
